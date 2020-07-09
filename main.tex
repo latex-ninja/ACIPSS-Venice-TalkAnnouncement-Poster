@@ -1,0 +1,94 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=25mm]{geometry}
+
+\usepackage{xcolor}
+\usepackage[english,ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{pagecolor}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+
+\definecolor{acipssbeige}{HTML}{835504}
+\definecolor{acipssblue}{HTML}{047283}
+\pagecolor{acipssblue}
+
+\usepackage[default,thin]{raleway}
+\setlength\parindent{0pt}
+
+
+\newsavebox{\fmbox}
+
+%https://brunoj.wordpress.com/2009/10/08/latex-the-framed-minipage/
+\newenvironment{fmpage}[1]
+{\begin{lrbox}{\fmbox}\begin{minipage}{#1}}
+{\end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}}}
+
+
+\newcommand{\crosshairs}{{\color{acipssbeige!60}\fontsize{120pt}{40pt}\selectfont\faCrosshairs}}
+\def \factor {2.5}
+
+\title{ACIPSS Konferenzposter Mai19}
+\author{Austrian Centre for Intelligence, Propaganda and Security Studies}
+\date{Mai 2019}
+
+\begin{document}
+%\pagestyle{empty}
+
+\vspace{3cm}
+\begin{minipage}[t]{0.68\textwidth}
+{\fontsize{30pt}{30pt}\selectfont\colorbox{acipssbeige!30}{\textbf{Venice's Secret Service}}}\\
+{\fontsize{20pt}{20pt}\selectfont\colorbox{acipssbeige!30}{Offical Secrecy and Intelligence}}\\
+{\fontsize{20pt}{20pt}\selectfont\colorbox{acipssbeige!30}{Organisation in the Renaissance}}\\
+{\fontsize{20pt}{20pt}\selectfont\colorbox{acipssbeige!30}{\textbf{Ioanna Iordanou}}}
+\end{minipage}\hfill\hspace{1cm}
+\begin{minipage}[t]{0.29\textwidth}
+\vspace{1cm}
+\begin{tikzpicture}
+\node[anchor=center] at (0,0) {\crosshairs};
+\draw[ultra thick] (-\factor,0) -- (\factor,0);
+\draw[ultra thick] (0,-\factor) -- (0,\factor);
+\end{tikzpicture}
+\end{minipage}\hfill
+\vspace{1em}
+
+
+\bigskip
+
+\vspace{1em}
+
+\begin{minipage}[t]{0.55\textwidth}
+\color{acipssbeige!10} \bf
+\large
+In this talk, Dr Ioanna Iordanou will discuss the structure and function of Renaissance Venice’s secret service, claiming that it was one of the world’s earliest – if not the earliest – central intelligence organisation. Mixing archival records and historiography with constructs from Sociology and Organisation Studies, she will attempt to overturn conventional wisdom dictating that systematised intelligence is a contemporary phenomenon, offering some important takeaways to scholars of history, intelligence, even organisation studies, as well as any individual interested in the fascinating topic of espionage and intelligence organisation in the period of the Renaissance.
+\medskip
+
+\end{minipage}\hfill\hspace{2em}\begin{minipage}[t]{0.27\textwidth}\vspace{1em}
+\Large
+
+ 
+ {\fontsize{30pt}{30pt}\selectfont\colorbox{acipssbeige!30}{\textbf{5. Juni}}}\\
+ \smallskip
+ 
+  {\fontsize{30pt}{30pt}\selectfont\colorbox{acipssbeige!30}{\textbf{19:00}}}\\
+
+{\fontsize{15pt}{15pt}\selectfont\colorbox{acipssblue!70}{\textbf{Heinrichstraße 26}}}\\
+{\fontsize{20pt}{20pt}\selectfont\colorbox{acipssblue!70}{\textbf{09.23}}}\\
+
+\medskip
+
+%}
+\end{minipage}\hfill
+
+
+\vfill
+
+\begin{minipage}[t]{0.28\textwidth}
+\includegraphics[width=0.87\textwidth]{acipss-gross.jpg}
+\end{minipage}\hfill \includegraphics[width=0.3\textwidth]{DSC_9091-magic-1.jpg}
+
+
+\end{document}
